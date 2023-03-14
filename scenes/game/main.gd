@@ -41,8 +41,6 @@ class Settings:
 onready var _interface : CanvasLayer = $MainInterface
 onready var _continous_timer : Timer = $ContinuousTimer
 
-const _initial_visualizer : String = "vertical_lines"
-const _initial_sorter : String = "bubble_sort"
 var _sorter : Sorter = null
 var _visualizer = null
 
@@ -53,19 +51,12 @@ var _is_stoping_next : bool = false
 
 var _settings : Settings = Settings.new()
 
-
 func _ready():
 	# apply settings from file
 	_apply_settings()
 	
 	# initial sorter/visualizer
-	_set_visualizer(load(FilesTracker.get_visualizers_dict()[_initial_visualizer]["scene"]).instance())
-	_visualizer.reset()
-	
-	_sorter = load(FilesTracker.get_sorters_dict()[_initial_sorter]).new()
-	_sorter.setup(_visualizer.get_content_count(), funcref(_visualizer, "determine_priority"))
-	
-	_interface.setup(_initial_visualizer, _initial_sorter)
+	_interface._on_visualizer_pressed()
 
 func _apply_settings():
 	_continous_timer.wait_time = _settings.time_per_step / 1000
@@ -173,5 +164,11 @@ func _reset():
 	_running_mode = RunningMode.step
 	_continous_timer.stop()
 	_interface.set_ui_active(true) # in case we change sorter mid sort
-	_visualizer.reset()
-	_sorter.setup(_visualizer.get_content_count(), funcref(_visualizer, "determine_priority"))
+	if _visualizer == null:
+		_interface._on_visualizer_pressed()
+	else:
+		_visualizer.reset()
+	if _sorter == null:
+		_interface._on_sorter_pressed()
+	else:
+		_sorter.setup(_visualizer.get_content_count(), funcref(_visualizer, "determine_priority"))
