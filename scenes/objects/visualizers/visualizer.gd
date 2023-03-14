@@ -50,3 +50,7 @@ func finish():
 #			If false, the visualizer does not appear in the popup
 func is_enabled() -> bool:
 	return true
+
+
+func get_visualizer_name() -> String:
+	return get_metadata()["title"]

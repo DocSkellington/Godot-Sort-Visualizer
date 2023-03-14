@@ -80,4 +80,4 @@ func skip_to_last_step() -> Array:
 
 
 func get_sorter_name() -> String:
-	return tr("Odd-even sort")
+	return "ODDEVENSORT"

@@ -93,4 +93,4 @@ func _divide_n_conquer_full(arr : Array, low_bound : int, high_bound : int) -> A
 
 
 func get_sorter_name() -> String:
-	return tr("Quick sort")
+	return "QUICKSORT"

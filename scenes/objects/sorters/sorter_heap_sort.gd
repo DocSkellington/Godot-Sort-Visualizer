@@ -118,4 +118,4 @@ func _h_sift_down(arr : Array, index : int): # no I didn't loose my teeth, it's 
 
 
 func get_sorter_name() -> String:
-	return tr("Heap sort")
+	return "HEAPSORT"
