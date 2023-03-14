@@ -43,7 +43,7 @@ func _ready():
 # override
 static func get_metadata() -> Dictionary:
 	return {
-		"title":"puzzle_pieces", "image":"puzzle_pieces.png",
+		"title":"Puzzle", "image":"puzzle_pieces.png",
 		"description":"An image split into a grid of puzzle pieces that get sorted in the right order to form the image"
 	}
 

@@ -53,7 +53,7 @@ func _ready():
 # override
 static func get_metadata() -> Dictionary:
 	return {
-		"title":"singing_lazers", "image":"singing_lazers.png",
+		"title":"Singing lazers", "image":"singing_lazers.png",
 		"description":"Machines that shoot colorful Lazer into receivers with different colors, when a lazer matches the right receiver it will play a tune, once all lazers are in the right position they'll play a nice music (get the reference?)"
 	}
 

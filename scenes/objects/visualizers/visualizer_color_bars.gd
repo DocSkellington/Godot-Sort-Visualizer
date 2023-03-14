@@ -87,7 +87,7 @@ func _draw():
 # override
 static func get_metadata() -> Dictionary:
 	return {
-		"title":"color bars", "image":"color_bars.png",
+		"title":"Color bars", "image":"color_bars.png",
 		"description":"Horizontal bars with different colors that are sorted from bright to dark, while visually keeping a record of their old positions"
 	}
 
