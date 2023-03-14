@@ -21,9 +21,11 @@ func _ready():
 		# ignore base class
 		if curr_dir != "sorter.gd":
 			assert(curr_dir.begins_with("sorter_"), "sorter scripts must start with 'sorter_'")
-			
-			var sorter_name : String = curr_dir.substr(7).get_basename()
-			_sorters[sorter_name] = _sorters_path + curr_dir
+
+			var scene = load(_sorters_path + curr_dir).new()
+			if scene.is_enabled():
+				var sorter_name : String = scene.get_sorter_name()
+				_sorters[sorter_name] = _sorters_path + curr_dir
 		
 		curr_dir = dir.get_next()
 	
@@ -37,11 +39,13 @@ func _ready():
 			var script_name : String = curr_dir.replace(".tscn", ".gd")
 			assert(curr_dir.begins_with("visualizer_"), "visualizer scenes must start with 'visualizer_'")
 			assert(dir.file_exists(script_name), "visualizer " + curr_dir + " has no script, make sure that each visualizer has a script with the same name")
-			
-			var visualizer_name : String = curr_dir.substr(11).get_basename()
-			_visualizers[visualizer_name] = Dictionary()
-			_visualizers[visualizer_name]["scene"] = _visualizers_path + curr_dir
-			_visualizers[visualizer_name]["script"] = _visualizers_path + script_name
+
+			var scene = load(_visualizers_path + script_name).new()
+			if scene.is_enabled():
+				var visualizer_name : String = curr_dir.substr(11).get_basename()
+				_visualizers[visualizer_name] = Dictionary()
+				_visualizers[visualizer_name]["scene"] = _visualizers_path + curr_dir
+				_visualizers[visualizer_name]["script"] = _visualizers_path + script_name
 		
 		curr_dir = dir.get_next()
 

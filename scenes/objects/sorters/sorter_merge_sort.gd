@@ -126,9 +126,5 @@ func _merge(first_half : Array, second_half : Array):
 	return combined
 
 
-func is_to_use() -> bool:
-	return true
-
-
 func get_sorter_name() -> String:
-	return tr("MERGESORT")
+	return tr("Merge sort")

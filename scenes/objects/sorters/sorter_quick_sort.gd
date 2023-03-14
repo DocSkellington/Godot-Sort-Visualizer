@@ -90,3 +90,7 @@ func _divide_n_conquer_full(arr : Array, low_bound : int, high_bound : int) -> A
 	if pivot_idx+1 <= high_bound: ordered_arr.append_array(_divide_n_conquer_full(arr, pivot_idx+1, high_bound))
 	
 	return ordered_arr
+
+
+func get_sorter_name() -> String:
+	return tr("Quick sort")

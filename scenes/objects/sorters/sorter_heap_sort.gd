@@ -115,3 +115,7 @@ func _h_sift_down(arr : Array, index : int): # no I didn't loose my teeth, it's 
 		
 		# if we reach this, both children are bigger
 		break
+
+
+func get_sorter_name() -> String:
+	return tr("Heap sort")

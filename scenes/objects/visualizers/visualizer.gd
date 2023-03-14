@@ -44,3 +44,9 @@ func set_ui_visibility(is_visible : bool):
 # override, for additional effects etc.. after sorting is finished
 func finish():
 	emit_signal("finished")
+
+
+# override, return true if and only if this visualizer should be used.
+#			If false, the visualizer does not appear in the popup
+func is_enabled() -> bool:
+	return true

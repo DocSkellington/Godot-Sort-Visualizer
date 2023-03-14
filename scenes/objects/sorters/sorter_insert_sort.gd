@@ -63,3 +63,7 @@ func skip_to_last_step() -> Array:
 					Utility.swap_elements(indexes, j, j-1)
 	
 	return indexes
+
+
+func get_sorter_name() -> String:
+	return tr("Insertion sort")
