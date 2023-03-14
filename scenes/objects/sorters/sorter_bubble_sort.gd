@@ -60,7 +60,7 @@ func skip_to_last_step() -> Array:
 
 
 func is_to_use() -> bool:
-	return true
+	return false
 
 
 func get_sorter_name() -> String:
