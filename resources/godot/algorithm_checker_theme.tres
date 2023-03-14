@@ -21,7 +21,7 @@ border_width_bottom = 2
 border_color = Color( 1, 0.933333, 0.8, 1 )
 
 [sub_resource type="StyleBoxFlat" id=4]
-bg_color = Color( 1, 0.411765, 0.45098, 1 )
+bg_color = Color( 0.854902, 0.101961, 0.341176, 1 )
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -40,7 +40,7 @@ border_width_bottom = 1
 border_color = Color( 0.0823529, 0.470588, 0.54902, 1 )
 
 [sub_resource type="StyleBoxFlat" id=1]
-bg_color = Color( 0.0823529, 0.470588, 0.54902, 1 )
+bg_color = Color( 0, 0.670588, 0.8, 1 )
 corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6
@@ -59,10 +59,10 @@ size = 22
 font_data = ExtResource( 3 )
 
 [sub_resource type="StyleBoxFlat" id=8]
-bg_color = Color( 1, 0.411765, 0.45098, 1 )
+bg_color = Color( 0.854902, 0.101961, 0.341176, 1 )
 
 [sub_resource type="StyleBoxFlat" id=10]
-bg_color = Color( 0, 0.72549, 0.745098, 1 )
+bg_color = Color( 0, 0.670588, 0.8, 1 )
 
 [sub_resource type="StyleBoxFlat" id=12]
 bg_color = Color( 1, 0.933333, 0.8, 1 )
@@ -71,14 +71,14 @@ bg_color = Color( 1, 0.933333, 0.8, 1 )
 draw_center = false
 border_width_left = 4
 border_width_right = 4
-border_color = Color( 0.0823529, 0.470588, 0.54902, 1 )
+border_color = Color( 0, 0.670588, 0.8, 1 )
 
 [resource]
 default_font = SubResource( 2 )
 Button/colors/font_color = Color( 1, 0.933333, 0.8, 1 )
-Button/colors/font_color_disabled = Color( 0.0823529, 0.470588, 0.54902, 1 )
-Button/colors/font_color_hover = Color( 1, 0.411765, 0.45098, 1 )
-Button/colors/font_color_pressed = Color( 1, 0.411765, 0.45098, 1 )
+Button/colors/font_color_disabled = Color( 0, 0.670588, 0.8, 1 )
+Button/colors/font_color_hover = Color( 0.854902, 0.101961, 0.341176, 1 )
+Button/colors/font_color_pressed = Color( 0.854902, 0.101961, 0.341176, 1 )
 Button/fonts/font = ExtResource( 2 )
 Button/styles/disabled = SubResource( 6 )
 Button/styles/hover = SubResource( 5 )
