@@ -57,4 +57,4 @@ func is_to_use() -> bool:
 
 
 func get_sorter_name() -> String:
-	return tr("Bogosort")
+	return tr("BOGOSORT")

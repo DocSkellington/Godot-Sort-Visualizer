@@ -38,8 +38,8 @@ func _ready():
 # override
 static func get_metadata() -> Dictionary:
 	return {
-		"title":"Vertical lines", "image":"vertical_rects.png",
-		"description":"The classic vertical rectangles with different height that are sorter in ascending order"
+		"title":"VERTICAL_TITLE", "image":"vertical_rects.png",
+		"description":"VERTICAL_DESC"
 	}
 
 # override

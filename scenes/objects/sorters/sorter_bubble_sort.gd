@@ -64,4 +64,4 @@ func is_to_use() -> bool:
 
 
 func get_sorter_name() -> String:
-	return tr("Bubble sort")
+	return tr("BUBBLESORT")
