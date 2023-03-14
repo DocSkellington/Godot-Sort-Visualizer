@@ -57,3 +57,11 @@ func skip_to_last_step() -> Array:
 		if changed == false: break
 	
 	return indexes
+
+
+func is_to_use() -> bool:
+	return true
+
+
+func get_sorter_name() -> String:
+	return tr("Bubble sort")

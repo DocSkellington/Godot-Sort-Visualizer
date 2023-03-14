@@ -56,3 +56,7 @@ func skip_to_last_step() -> Array:
 			i += 1
 	
 	return indexes
+
+
+func get_sorter_name() -> String:
+	return tr("Gnome sort")

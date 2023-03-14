@@ -135,3 +135,7 @@ func _merge(first_half : Array, second_half : Array):
 		combined.append_array(second_half.slice(second_h_idx, second_half.size()-1))
 	
 	return combined
+
+
+func get_sorter_name() -> String:
+	return tr("Merge sort")
