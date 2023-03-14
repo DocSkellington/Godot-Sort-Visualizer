@@ -138,4 +138,4 @@ func _merge(first_half : Array, second_half : Array):
 
 
 func get_sorter_name() -> String:
-	return tr("Merge sort")
+	return tr("MERGESORT")
