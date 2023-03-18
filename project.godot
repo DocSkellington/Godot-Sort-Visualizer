@@ -75,7 +75,6 @@ texture={
 
 [locale]
 
-test="fr"
 translations=PoolStringArray( "res://resources/i18n/i18n.en.translation", "res://resources/i18n/i18n.fr.translation" )
 
 [physics]
