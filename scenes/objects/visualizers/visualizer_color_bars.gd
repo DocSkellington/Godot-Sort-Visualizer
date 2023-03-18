@@ -307,5 +307,5 @@ func _resize_scroll_grabber():
 		_on_scroll()
 
 
-func is_to_use() -> bool:
+func is_enabled() -> bool:
 	return true

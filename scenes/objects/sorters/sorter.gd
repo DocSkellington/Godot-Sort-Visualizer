@@ -35,7 +35,7 @@ func skip_to_last_step() -> Array:
 
 # override, return true if and only if this sorter should be used.
 #			If false, the sorter does not appear in the popup
-func is_to_use() -> bool:
+func is_enabled() -> bool:
 	return false
 
 

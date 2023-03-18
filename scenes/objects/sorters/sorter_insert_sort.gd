@@ -65,7 +65,7 @@ func skip_to_last_step() -> Array:
 	return indexes
 
 
-func is_to_use() -> bool:
+func is_enabled() -> bool:
 	return true
 
 
