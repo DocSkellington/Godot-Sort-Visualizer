@@ -112,5 +112,5 @@ func _clear_colors():
 	_colored_rects.clear()
 
 
-func is_to_use() -> bool:
+func is_enabled() -> bool:
 	return true

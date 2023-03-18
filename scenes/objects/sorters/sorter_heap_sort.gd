@@ -117,7 +117,7 @@ func _h_sift_down(arr : Array, index : int): # no I didn't loose my teeth, it's 
 		break
 
 
-func is_to_use() -> bool:
+func is_enabled() -> bool:
 	return true
 
 

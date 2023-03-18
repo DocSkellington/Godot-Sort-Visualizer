@@ -23,7 +23,7 @@ func _ready():
 			assert(curr_dir.begins_with("sorter_"), "sorter scripts must start with 'sorter_'")
 
 			var scene = load(_sorters_path + curr_dir).new()
-			if scene.is_to_use():
+			if scene.is_enabled():
 				var sorter_name : String = scene.get_sorter_name()
 				_sorters[sorter_name] = _sorters_path + curr_dir
 		
@@ -41,7 +41,7 @@ func _ready():
 			assert(dir.file_exists(script_name), "visualizer " + curr_dir + " has no script, make sure that each visualizer has a script with the same name")
 
 			var scene = load(_visualizers_path + script_name).new()
-			if scene.is_to_use():
+			if scene.is_enabled():
 				var visualizer_name : String = curr_dir.substr(11).get_basename()
 				_visualizers[visualizer_name] = Dictionary()
 				_visualizers[visualizer_name]["scene"] = _visualizers_path + curr_dir

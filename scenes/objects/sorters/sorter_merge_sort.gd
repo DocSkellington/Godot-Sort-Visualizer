@@ -126,7 +126,7 @@ func _merge(first_half : Array, second_half : Array):
 	return combined
 
 
-func is_to_use() -> bool:
+func is_enabled() -> bool:
 	return true
 
 
