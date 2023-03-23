@@ -30,7 +30,7 @@ BOGOSORT,Bogosort,Tri stupide
 BUBBLESORT,Bubble sort,Tri à bulles
 GNOMESORT,Gnome sort,Tri gnome
 HEAPSORT,Heap sort,Tri par tas
-INSERTIONSORT,Insertion sort,Tri par insertion
+INSERTIONSORT,Insertion sort,Tri à bulles
 MERGESORT,Merge sort,Tri par fusion
 ODDEVENSORT,Odd-even sort,Tri pair-impair
 QUICKSORT,Quick sort,Tri rapide (quicksort)
