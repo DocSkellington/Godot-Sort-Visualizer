@@ -45,7 +45,7 @@ onready var _interface : CanvasLayer = $MainInterface
 onready var _continous_timer : Timer = $ContinuousTimer
 
 const _initial_visualizer : String = "VERTICAL_TITLE"
-const _initial_sorter : String = "BUBBLESORT"
+const _initial_sorter : String = "INSERTIONSORT"
 var _sorter : Sorter = null
 var _visualizer = null
 
